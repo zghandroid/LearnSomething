@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,40 +9,39 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/vp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
 
     <RadioGroup
+        android:id="@+id/rg"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
         >
         <RadioButton
             android:id="@+id/all"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="全部"
+            style="@style/style_RadioButton"
+            android:text="@string/all"
+            android:checked="true"
+            android:drawableTop="@drawable/all_selector"
             />
         <RadioButton
             android:id="@+id/android"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Android"
+            style="@style/style_RadioButton"
+            android:text="@string/android"
+            android:drawableTop="@drawable/android_selector"
             />
         <RadioButton
             android:id="@+id/ios"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="IOS"
-            />
+            style="@style/style_RadioButton"
+            android:text="@string/ios"
+            android:drawableTop="@drawable/ios_selector"/>
         <RadioButton
             android:id="@+id/fuli"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="福利"
+            style="@style/style_RadioButton"
+            android:text="@string/fuli"
+            android:drawableTop="@drawable/fuli_selector"
             />
 
     </RadioGroup>
