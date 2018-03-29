@@ -53,10 +53,6 @@ public class MainActivity extends BaseActivity {
             public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
                 switch (checkedId) {
                     case R.id.all:
-                        /**
-                         * setCurrentItem第二个参数控制页面切换动画
-                         * true:打开/false:关闭
-                         */
                         vp.setCurrentItem(0, false);
                         break;
                     case R.id.android:
