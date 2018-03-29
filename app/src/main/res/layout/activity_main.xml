@@ -18,9 +18,32 @@
         android:orientation="horizontal"
         >
         <RadioButton
+            android:id="@+id/all"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:text="全部"
+            />
+        <RadioButton
+            android:id="@+id/android"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Android"
+            />
+        <RadioButton
+            android:id="@+id/ios"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="IOS"
+            />
+        <RadioButton
+            android:id="@+id/fuli"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="福利"
             />
 
     </RadioGroup>
