@@ -8,107 +8,123 @@ import java.util.List;
 
 public class Android {
 
-        /**
-         * _id : 5a967b41421aa91071b838f7
-         * createdAt : 2018-02-28T17:49:53.265Z
-         * desc : MusicLibrary-一个丰富的音频播放SDK
-         * publishedAt : 2018-03-12T08:44:50.326Z
-         * source : web
-         * type : Android
-         * url : https://github.com/lizixian18/MusicLibrary
-         * used : true
-         * who : lizixian
-         * images : ["http://img.gank.io/90db2f35-2e9d-4d75-b5a9-53ee1719b57b"]
-         */
+    /**
+     * _id : 5a967b41421aa91071b838f7
+     * createdAt : 2018-02-28T17:49:53.265Z
+     * desc : MusicLibrary-一个丰富的音频播放SDK
+     * publishedAt : 2018-03-12T08:44:50.326Z
+     * source : web
+     * type : Android
+     * url : https://github.com/lizixian18/MusicLibrary
+     * used : true
+     * who : lizixian
+     * images : ["http://img.gank.io/90db2f35-2e9d-4d75-b5a9-53ee1719b57b"]
+     */
 
-        private String _id;
-        private String createdAt;
-        private String desc;
-        private String publishedAt;
-        private String source;
-        private String type;
-        private String url;
-        private boolean used;
-        private String who;
-        private List<String> images;
+    private String _id;
+    private String createdAt;
+    private String desc;
+    private String publishedAt;
+    private String source;
+    private String type;
+    private String url;
+    private boolean used;
+    private String who;
+    private List<String> images;
 
-        public String get_id() {
-            return _id;
-        }
+    public Android() {
+    }
 
-        public void set_id(String _id) {
-            this._id = _id;
-        }
+    public Android(String _id, String createdAt, String desc, String publishedAt, String source, String type, String url, boolean used, String who, List<String> images) {
+        this._id = _id;
+        this.createdAt = createdAt;
+        this.desc = desc;
+        this.publishedAt = publishedAt;
+        this.source = source;
+        this.type = type;
+        this.url = url;
+        this.used = used;
+        this.who = who;
+        this.images = images;
+    }
 
-        public String getCreatedAt() {
-            return createdAt;
-        }
+    public String get_id() {
+        return _id;
+    }
 
-        public void setCreatedAt(String createdAt) {
-            this.createdAt = createdAt;
-        }
+    public void set_id(String _id) {
+        this._id = _id;
+    }
 
-        public String getDesc() {
-            return desc;
-        }
+    public String getCreatedAt() {
+        return createdAt;
+    }
 
-        public void setDesc(String desc) {
-            this.desc = desc;
-        }
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
+    }
 
-        public String getPublishedAt() {
-            return publishedAt;
-        }
+    public String getDesc() {
+        return desc;
+    }
 
-        public void setPublishedAt(String publishedAt) {
-            this.publishedAt = publishedAt;
-        }
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
 
-        public String getSource() {
-            return source;
-        }
+    public String getPublishedAt() {
+        return publishedAt;
+    }
 
-        public void setSource(String source) {
-            this.source = source;
-        }
+    public void setPublishedAt(String publishedAt) {
+        this.publishedAt = publishedAt;
+    }
 
-        public String getType() {
-            return type;
-        }
+    public String getSource() {
+        return source;
+    }
 
-        public void setType(String type) {
-            this.type = type;
-        }
+    public void setSource(String source) {
+        this.source = source;
+    }
 
-        public String getUrl() {
-            return url;
-        }
+    public String getType() {
+        return type;
+    }
 
-        public void setUrl(String url) {
-            this.url = url;
-        }
+    public void setType(String type) {
+        this.type = type;
+    }
 
-        public boolean isUsed() {
-            return used;
-        }
+    public String getUrl() {
+        return url;
+    }
 
-        public void setUsed(boolean used) {
-            this.used = used;
-        }
+    public void setUrl(String url) {
+        this.url = url;
+    }
 
-        public String getWho() {
-            return who;
-        }
+    public boolean isUsed() {
+        return used;
+    }
 
-        public void setWho(String who) {
-            this.who = who;
-        }
+    public void setUsed(boolean used) {
+        this.used = used;
+    }
 
-        public List<String> getImages() {
-            return images;
-        }
+    public String getWho() {
+        return who;
+    }
 
-        public void setImages(List<String> images) {
-            this.images = images;
-        }
+    public void setWho(String who) {
+        this.who = who;
+    }
+
+    public List<String> getImages() {
+        return images;
+    }
+
+    public void setImages(List<String> images) {
+        this.images = images;
+    }
 }

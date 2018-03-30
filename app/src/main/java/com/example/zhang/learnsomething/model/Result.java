@@ -6,7 +6,7 @@ import java.util.List;
  * Created by 12345 on 2018/3/29.
  */
 
-public class Resulet<T> {
+public class Result<T> {
 
 
     /**
@@ -32,6 +32,11 @@ public class Resulet<T> {
         this.results = results;
     }
 
-    public static class ResultsBean {
+    public Result() {
+    }
+
+    public Result(boolean error, List<T> results) {
+        this.error = error;
+        this.results = results;
     }
 }

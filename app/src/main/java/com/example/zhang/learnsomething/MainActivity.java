@@ -7,6 +7,7 @@ import android.support.v4.view.ViewPager;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.bumptech.glide.Glide;
 import com.example.zhang.learnsomething.adapter.VPAdapter;
 import com.example.zhang.learnsomething.base.BaseActivity;
 import com.example.zhang.learnsomething.fragment.AllFragment;
@@ -104,6 +105,7 @@ public class MainActivity extends BaseActivity {
 
             }
         });
+
 
     }
 }
