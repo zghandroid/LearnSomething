@@ -5,9 +5,11 @@
     tools:context="com.example.zhang.learnsomething.fragment.AllFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:id="@+id/iv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="全部" />
+        android:src="@mipmap/ic_launcher"
+         />
 
 </FrameLayout>
