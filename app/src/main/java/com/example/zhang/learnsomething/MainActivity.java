@@ -7,6 +7,7 @@ import android.support.v4.view.ViewPager;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.bumptech.glide.Glide;
 import com.example.zhang.learnsomething.adapter.VPAdapter;
 import com.example.zhang.learnsomething.base.BaseActivity;
 import com.example.zhang.learnsomething.fragment.AllFragment;
@@ -53,10 +54,6 @@ public class MainActivity extends BaseActivity {
             public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
                 switch (checkedId) {
                     case R.id.all:
-                        /**
-                         * setCurrentItem第二个参数控制页面切换动画
-                         * true:打开/false:关闭
-                         */
                         vp.setCurrentItem(0, false);
                         break;
                     case R.id.android:
@@ -108,6 +105,7 @@ public class MainActivity extends BaseActivity {
 
             }
         });
+
 
     }
 }
