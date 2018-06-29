@@ -39,7 +39,7 @@ public class AllFragment extends BaseFragment {
         call.getData("all", 20, 2, new BaseObserver<Android>(getContext(),false) {
             @Override
             public void onSuccess(List<Android> data) {
-//               Glide.with(getContext()).load(android.getUrl()).into(iv);
+                Glide.with(getContext()).load(data.get(0).getUrl()).into(iv);
 
             }
         });
