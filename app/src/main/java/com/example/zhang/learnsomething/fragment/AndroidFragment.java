@@ -34,7 +34,7 @@ public class AndroidFragment extends BaseFragment {
 
     private LineChart lineChart;
     @Override
-    protected void initView() {
+    protected void initView(View view) {
 
     }
 

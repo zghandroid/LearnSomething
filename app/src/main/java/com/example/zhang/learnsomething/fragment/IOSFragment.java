@@ -15,7 +15,7 @@ import com.example.zhang.learnsomething.base.BaseFragment;
 public class IOSFragment extends BaseFragment {
 
     @Override
-    protected void initView() {
+    protected void initView(View view) {
 
     }
 

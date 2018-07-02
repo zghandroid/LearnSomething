@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.zhang.learnsomething.R;
 import com.example.zhang.learnsomething.base.BaseFragment;
 import com.example.zhang.learnsomething.model.Android;
@@ -26,7 +25,7 @@ public class AllFragment extends BaseFragment {
     ImageView iv;
 
     @Override
-    protected void initView() {
+    protected void initView(View view) {
 
     }
 
@@ -36,7 +35,7 @@ public class AllFragment extends BaseFragment {
         View view = inflater.inflate(R.layout.fragment_all, container, false);
         ButterKnife.inject(this, view);
         HTTPCall call=new HTTPCall();
-        call.getData("all", 20, 2, new BaseObserver<Android>(getContext(),false) {
+        call.getData("福利", 20, 2, new BaseObserver<Android>(getContext(),false) {
             @Override
             public void onSuccess(List<Android> data) {
                 Glide.with(getContext()).load(data.get(0).getUrl()).into(iv);
