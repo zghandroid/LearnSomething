@@ -5,9 +5,31 @@
     tools:context="com.example.zhang.learnsomething.fragment.IOSFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <Button
+        android:id="@+id/start_service"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="IOS" />
+        android:layout_height="80dp"
+        android:text="开启服务" />
+    <Button
+        android:id="@+id/stop_service"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="160dp"
+        android:text="关闭服务"
+        />
+    <Button
+        android:id="@+id/bind_service"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="260dp"
+        android:text="绑定服务"
+        />
+    <Button
+        android:id="@+id/unbind_service"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="360dp"
+        android:text="解绑服务"
+        />
 
 </FrameLayout>
