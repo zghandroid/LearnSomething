@@ -5,7 +5,7 @@
     tools:context="com.example.zhang.learnsomething.fragment.AllFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <ImageView
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/iv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

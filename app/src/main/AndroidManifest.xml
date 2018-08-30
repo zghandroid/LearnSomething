@@ -21,22 +21,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".WelcomeActivity" />
+
         <receiver android:name=".reciver.MyReciver">
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
-        <service android:name=".service.MyService"/>
-        <service android:name=".service.MyIntentSevice">
-            <intent-filter >
-                <action android:name="cn.scu.finch"/>
-            </intent-filter>
 
+        <service android:name=".service.MyService" />
+        <service android:name=".service.MyIntentSevice">
+            <intent-filter>
+                <action android:name="cn.scu.finch" />
+            </intent-filter>
         </service>
+
         <provider
-            android:authorities="cn.zhang.test"
-            android:name=".contentprovider.MyProvider"/>
+            android:name=".contentprovider.MyProvider"
+            android:authorities="cn.zhang.test" />
+
+        <activity android:name=".TestBitmapActivity"></activity>
     </application>
 
 </manifest>

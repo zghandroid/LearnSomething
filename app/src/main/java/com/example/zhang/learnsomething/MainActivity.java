@@ -54,8 +54,9 @@ public class MainActivity extends BaseActivity {
         ButterKnife.inject(this);
         initView();
 
-        testIntentService();
-        testContentProivder();
+        startActivity(new Intent(this,TestBitmapActivity.class));
+//        testIntentService();
+//        testContentProivder();
     }
 
     private void testContentProivder() {
@@ -118,16 +119,16 @@ public class MainActivity extends BaseActivity {
         Bundle bundle = new Bundle();
         bundle.putString("taskName", "task1");
         i.putExtras(bundle);
-        startService(i);
+      //  startService(i);
 
         // 请求2
         Intent i2 = new Intent("cn.scu.finch");
         Bundle bundle2 = new Bundle();
         bundle2.putString("taskName", "task2");
         i2.putExtras(bundle2);
-        startService(i2);
+       // startService(i2);
 
-        startService(i);  //多次启动
+       // startService(i);  //多次启动
     }
 
 
